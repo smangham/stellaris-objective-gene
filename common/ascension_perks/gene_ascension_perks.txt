@@ -1,0 +1,34 @@
+# See traditions/README.txt for format
+
+gene_ascension_perk = {
+	on_enabled = {
+		custom_tooltip = "engineered_evolution_tooltip"
+		add_research_option = tech_gene_seed_purification
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+		has_tradition = tr_genetics_finish
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+	}
+
+	potential = {
+		has_utopia = yes
+		NOR = {
+			has_ascension_perk = gene_ascension_perk
+			has_authority = "auth_machine_intelligence"
+			has_origin = origin_shroudwalker_apprentice
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

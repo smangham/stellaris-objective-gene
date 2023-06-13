@@ -1,0 +1,43 @@
+gene_trait_immortal = {
+	cost = 0
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	potential_crossbreeding_chance = 0.0
+
+	species_potential_add = {
+		has_ascension_perk = gene_ascension_perk
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	potential_crossbreeding_chance = 0.0
+
+	opposites = { 
+		trait_fleeting
+		trait_zombie
+		trait_enduring
+		trait_venerable
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	immortal = yes	
+
+	modifier = {
+		
+	}
+	
+	custom_tooltip_with_modifiers = gene_trait_immortal_tooltip
+
+	slave_cost = {
+		energy = 5000
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
